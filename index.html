@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alert Example</title>
+</head>
+<body>
+  <button onclick="showAlert()">Click Me</button>
+
+  <script>
+    function showAlert() {
+      alert("Hello! Ye ek simple alert popup hai.");
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm Example</title>
+</head>
+<body>
+  <button onclick="askUser()">Delete?</button>
+
+  <script>
+    function askUser() {
+      let result = confirm("Kya aap sure ho delete karna hai?");
+      if(result) {
+        alert("Deleted!");
+      } else {
+        alert("Cancel ho gaya.");
+      }
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt Example</title>
+</head>
+<body>
+  <button onclick="getName()">Enter Name</button>
+
+  <script>
+    function getName() {
+      let name = prompt("Apna naam likho:");
+      if(name) {
+        alert("Hello " + name + "!");
+      } else {
+        alert("Kuch nahi likha.");
+      }
+    }
+  </script>
+</body>
+</html>
+
