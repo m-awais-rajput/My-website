@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Simple Form</h3>
+    <label>Name:</label>
+    <input type="text" id="Name"><br><br>
+    <label>Email:</label>
+    <input type="text" id="Email"><br><br>
+    <button onclick="Form ()">Submit</button>
+    <p id="result"></p>
+    <script>
+        function Form(){
+            let Name = document.getElementById("Name").value;
+            let Email =document.getElementById("Email").value;
+            if(Name === ""|| Email === ""){
+                document.getElementById("result").innerText = " Fill The Details"
+            }
+            else{
+                document.getElementById("result").innerText="Thank You!" + Name + "We Got Your Email   " + Email ;
+            }
+        }
+    </script>
+</body>
+</html>
